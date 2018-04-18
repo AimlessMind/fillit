@@ -6,7 +6,7 @@
 /*   By: agrodzin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/10 19:11:02 by agrodzin          #+#    #+#             */
-/*   Updated: 2018/04/16 20:10:12 by zbruce           ###   ########.fr       */
+/*   Updated: 2018/04/18 14:40:24 by zbruce           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,6 @@ void	print_arr(char **brd)
 		}
 		i++;
 	}
-	ft_putchar('\n');
 }
 
 char	*get_file(char *argv)

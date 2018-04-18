@@ -6,7 +6,7 @@
 /*   By: agrodzin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/13 13:44:07 by agrodzin          #+#    #+#             */
-/*   Updated: 2018/04/16 17:20:02 by zbruce           ###   ########.fr       */
+/*   Updated: 2018/04/18 14:42:16 by zbruce           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -121,5 +121,12 @@ int		issafe_board(char **nb, int k, int l, struct s_nums *nums)
 			return (0);
 		i++;
 	}
+	return (1);
+}
+
+int		check_if_valid_p4(char *buf2)
+{
+	if (how_many_tetri(buf2) > 26)
+		return (0);
 	return (1);
 }

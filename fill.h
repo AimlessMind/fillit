@@ -6,7 +6,7 @@
 /*   By: agrodzin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/27 16:33:53 by agrodzin          #+#    #+#             */
-/*   Updated: 2018/04/15 13:16:58 by agrodzin         ###   ########.fr       */
+/*   Updated: 2018/04/18 14:19:33 by zbruce           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,5 +45,6 @@ void	alt_try_again(struct s_nums *nums);
 void	try_again(char **board, struct s_nums *nums, int i, int j);
 void	alt_solve(struct s_nums *nums);
 int		solve(char *buf2, struct s_nums *nums, char **board, int l);
+int		check_if_valid_p4(char *buf2);
 
 #endif

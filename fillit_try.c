@@ -6,7 +6,7 @@
 /*   By: agrodzin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/10 15:14:35 by agrodzin          #+#    #+#             */
-/*   Updated: 2018/04/16 20:12:58 by zbruce           ###   ########.fr       */
+/*   Updated: 2018/04/18 14:16:01 by zbruce           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,7 +99,8 @@ int		main(int argc, char *argv[])
 	buf2 = get_file(argv[1]);
 	alt_main(&nums);
 	board = allocate_board(nums.size);
-	if (check_if_valid(buf2, 4) == 0 || check_if_valid_p2(buf2) == 0)
+	if (check_if_valid(buf2, 4) == 0 || check_if_valid_p2(buf2) == 0 ||
+			check_if_valid_p4(buf2) == 0)
 	{
 		ft_putendl("error");
 		return (0);

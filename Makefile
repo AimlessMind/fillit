@@ -6,7 +6,7 @@
 #    By: agrodzin <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/03/24 10:41:06 by agrodzin          #+#    #+#              #
-#    Updated: 2018/04/15 17:19:58 by agrodzin         ###   ########.fr        #
+#    Updated: 2018/04/18 14:53:39 by zbruce           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,11 +33,10 @@ $(NAME): $(SRCS)
 	$(CC) $(CFLAGS) -o $(NAME) $(SRCS)
 
 clean:
-	/bin/rm -f *.o
+	/bin/rm -f ft_get_and_check.o ft_setup.o normalise.o check_put_board.o after_board_false.o fillit_try.o ft_putchar.o ft_putstr.o ft_strlen.o ft_putnbr.o ft_bzero.o ft_putendl.o
 
 fclean: clean
 	/bin/rm -f $(NAME)
-	/bin/rm -rf *.dSYM
-	/bin/rm -rf *.a libft/*.a
+	/bin/rm -rf libft/libft.a
 
 re: fclean all
